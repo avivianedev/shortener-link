@@ -1,0 +1,24 @@
+.header-container {
+  width: 100%;
+  padding: 2em 4em;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  gap: 1em;
+}
+.header-container .list-menu {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+}
+.header-container .list-menu a {
+  color: var(--Gray);
+  font-weight: bold;
+}
+.header-container .list-menu a:hover {
+  color: black;
+  font-weight: bold;
+}
+.header-container .auth {
+  margin-right: auto;
+}/*# sourceMappingURL=Style.css.map */
