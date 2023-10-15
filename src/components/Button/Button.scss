@@ -1,0 +1,27 @@
+.btn-copy {
+    background-color: var(--Cyan);
+    color: white;
+    padding: 8px 32px;
+    border-radius: 10px;
+    border: transparent;
+    cursor: pointer;
+    font-size: 18px;
+
+    &:hover {
+        opacity: .5;
+    }
+}
+
+.btn-copied {
+    background-color: var(--Dark-Violet);
+    color: white;
+    padding: 8px 32px;
+    border-radius: 10px;
+    border: transparent;
+    cursor: pointer;
+    font-size: 18px;
+
+    &:hover {
+        opacity: .5;
+    }
+}

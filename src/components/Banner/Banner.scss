@@ -1,0 +1,64 @@
+.banner {
+    background-color: var(--Dark-Violet);
+    background-image: url(/assets/images/bg-boost-desktop.svg);
+    width: 100%;
+    height: 250px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+
+    h2 {
+        color: white;
+        font-size: 2em;
+        text-align: center;
+    }
+
+    button {
+        background-color: var(--Cyan);
+        color: white;
+        padding: 16px 24px;
+        border-radius: 25px;
+        border: transparent;
+        cursor: pointer;
+        font-size: 18px;
+        width: 15%;
+
+        &:hover {
+            opacity: .5;
+        }
+    }
+}
+
+@media screen and ((max-width: 375px) or (max-width: 740px)) {
+    .banner {
+        gap: 1em;
+
+        h2 {
+            font-size: 1.5em;
+
+        }
+
+        button {
+            width: 50%;
+        }
+    }
+
+}
+
+@media screen and (min-width: 1920px) {
+    .banner {
+
+
+        h2 {
+            font-size: 2em;
+
+        }
+
+        button {
+            width: 10%;
+        }
+    }
+}

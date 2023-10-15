@@ -11,6 +11,7 @@
 
   /*Neutral*/
   --Gray: hsl(0, 0%, 75%);
+  --Gray-Light: hsl(0, 0%, 95%);
   --Grayish-Violet: hsl(257, 7%, 63%);
   --Very-Dark-Blue: hsl(255, 11%, 22%);
   --Very-Dark-Violet: hsl(260, 8%, 14%);

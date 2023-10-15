@@ -67,12 +67,12 @@
 
 }
 
-@media screen and (max-width: 375px) {
-
+@media screen and ((max-width: 375px) or (max-width: 740px)) {
     .header-container {
         padding: 1em 2em;
         justify-content: space-between;
         position: relative;
+
 
         .menu-container {
             display: none;
@@ -81,7 +81,6 @@
         .menu-responsive {
             display: block;
         }
-
 
         .menu-container-responsive {
             padding: 2em 0;
@@ -164,6 +163,11 @@
     }
 
 
+}
 
+@media screen and (min-width: 1920px) {
+    .header-container {
+        padding: 2em 8em;
+    }
 
 }

@@ -5,7 +5,8 @@
 //Copie o link encurtado para a área de transferência com um único clique
 //Receba uma mensagem de erro quando o `formulário` for enviado se://- O campo `input` está vazio
 
-import Home from "./Home"
+import Home from "./pages/Home"
+
 
 function App() {
 

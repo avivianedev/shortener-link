@@ -1,0 +1,207 @@
+.search-container {
+    padding: 4em;
+    width: 100%;
+    background-color: var(--Gray-Light);
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    margin-top: 4em;
+
+    .search-bg {
+        display: flex;
+        padding: 2em;
+        background-color: var(--Dark-Violet);
+        background-image: url("/assets/images/bg-shorten-desktop.svg");
+        background-size: cover;
+        border-radius: 10px;
+        gap: 2em;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        top: -16%;
+        width: 80%;
+
+        input {
+            padding: 1em;
+            width: 80%;
+            height: 48px;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .input-error {
+            padding: 1em;
+            width: 80%;
+            height: 48px;
+            border-radius: 10px;
+            border: 2px solid red;
+            position: relative;
+
+        }
+
+        button {
+            background-color: var(--Cyan);
+            color: white;
+            width: 20%;
+            height: 48px;
+            border-radius: 10px;
+            border: transparent;
+            cursor: pointer;
+            font-size: 18px;
+
+            &:hover {
+                opacity: .5;
+            }
+        }
+
+        .message-error {
+            color: red;
+            font-style: italic;
+            font-size: 18px;
+            position: absolute;
+            top: 75%;
+        }
+    }
+
+    .shortened-links-container {
+        width: 100%;
+        margin-top: 3em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+
+        .shortened-links {
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1em;
+            background-color: #fff;
+            border-radius: 10px;
+            text-overflow: "…";
+
+            p {
+                width: 60%;
+                display: inline-block;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                direction: ltr;
+
+
+            }
+
+
+            .short-btn {
+                display: flex;
+                align-items: center;
+                gap: 1em;
+
+                span {
+                    color: var(--Cyan);
+                }
+
+
+            }
+        }
+
+    }
+
+
+}
+
+@media screen and (min-width: 1920px) {
+    .search-container {
+        margin-top: 6em;
+        padding: 4em 8em;
+
+        .search-bg {
+            position: absolute;
+            top: -16%;
+            width: 80%;
+
+            .message-error {
+                top: 70%;
+            }
+        }
+
+        .shortened-links-container {
+            width: 100%;
+
+            .shortened-links {
+                width: 90%;
+            }
+        }
+
+    }
+
+}
+
+@media screen and ((max-width: 375px) or (max-width: 740px)) {
+    .search-container {
+        margin-top: 4em;
+        padding: 1em;
+        width: 100%;
+        display: inline-block;
+
+
+
+        .search-bg {
+            width: 90%;
+            background-image: url("/assets/images/bg-boost-mobile.svg");
+            flex-direction: column;
+            position: absolute;
+            top: -20%;
+
+
+            input {
+                width: 100%;
+            }
+
+            .input-error {
+                width: 100%;
+            }
+
+            .message-error {
+                width: 80%;
+                top: 45%;
+                font-size: 14px;
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+
+        .shortened-links-container {
+            margin-top: 6em;
+            width: 100%;
+
+
+            .shortened-links {
+                width: 100%;
+                flex-direction: column;
+                gap: 1em;
+                align-items: flex-start;
+
+                p {
+                    width: 100%;
+                }
+
+                .short-btn {
+                    gap: 1em;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    width: 100%;
+
+                    button {
+                        align-self: center;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
